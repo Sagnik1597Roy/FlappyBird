@@ -40,7 +40,7 @@ while True:
         # However, the bird bottom has to more than the top pole height and gap to
         # hit the bottom pole.
         if bird_y <= top_pole_height or bird_y + 50 >= top_pole_height + pole_gap:
-            score = score - 5
+            score = score - 1
             if score == -1000:
                 print('Collision !! Bye Bye bird baby!!!', score)
                 pygame.quit()
